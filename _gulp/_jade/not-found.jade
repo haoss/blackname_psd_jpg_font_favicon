@@ -1,0 +1,50 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Не найдено' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Не найдено' + ' - Blackname.ru' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    // Content
+    .content
+      
+      // Search result
+      .search-result
+        .container
+          
+          .search-result__head
+            div.search-result__head--left Результаты поиска
+            
+          .search-result__not-result
+            div
+              .search-result__phone
+                span нет совпадений по: 
+                strong +79687655454
+                small Вы можете оставить свой отзыв
+              a(href="#!").btn.btn--thin.btn--comment
+                i.icon.icon--comment
+                | оставить отзыв
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

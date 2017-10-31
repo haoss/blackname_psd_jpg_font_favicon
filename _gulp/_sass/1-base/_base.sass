@@ -79,7 +79,8 @@ em, i, .em, .i
   font-style: italic
 
 strong, b, .strong, .b
-  font-weight: bold
+  font-weight: 400
+  font-family: $font-roboto-bold
 
 hr
   border: solid #ddd
@@ -130,20 +131,20 @@ a.link
   z-index: 10000
   background-color: $color-white
   &__block
-    background: $color-black
+    background: $color-orange
     animation: load1 1s infinite ease-in-out
     width: 1em
     height: 4em
     position: absolute
     top: 50%
     left: 50%
-    color: $color-black
+    color: $color-orange
     text-indent: -9999em
     font-size: 11px
     animation-delay: -0.16s
     transition: transform(-50%,-50%)
     &:before, &:after
-      background: $color-black
+      background: $color-orange
       animation: load1 1s infinite ease-in-out
       width: 1em
       height: 4em
@@ -209,6 +210,10 @@ ul li
 ol li
   list-style-type: decimal
 
+.content
+  padding-bottom: 35px
+  min-height: 300px
+
 /* bg */
 .bg
   &--pink
@@ -245,8 +250,14 @@ ol li
 /* icons */
 .icon
   display: inline-block
-  // &--sprite
-  //   @include sprite($img-name)
+  &--comment
+    @include sprite($icon-comment)
+  &--comment-2
+    @include sprite($icon-comment-2)
+  &--search
+    @include sprite($icon-search)
+  &--download
+    @include sprite($icon-download)
 
 /* color */
 .color
@@ -254,3 +265,6 @@ ol li
     color: $color-black !important
   &--white
     color: $color-white !important
+
+.visible-xxs
+  display: none !important

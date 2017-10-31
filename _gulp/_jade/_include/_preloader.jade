@@ -1,2 +1,28 @@
 .loader
   .loader__block
+
+#popup-register.popup.popup--register.mfp-hide
+  .popup__title Внимание!
+  .popup__info Для того, чтобы оставлять отзывы или общаться с пользователем, зарегистрируйтесь
+  form(action="#!")
+    .form-group
+      label.hidden Имя
+      input(type="text" placeholder="Имя").form-control
+    .form-group
+      label.hidden Фамилия
+      input(type="text" placeholder="Фамилия").form-control
+    .form-group
+      label.hidden Телефон
+      input(type="text" placeholder="Телефон").form-control
+    .popup__separator
+      span или
+    .form-group
+      label.hidden Email
+      input(type="text" placeholder="Email").form-control
+    .clear
+    .popup__bottom
+      button(type="submit").btn Зарегистрироваться
+      
+#popup-senks.popup.popup--senks.mfp-hide
+  .popup__title поздравляем!
+  .popup__info Вы зарегистрировались на Блэкнэйм, служба поддержки свяжется с Вами в ближайшее время.

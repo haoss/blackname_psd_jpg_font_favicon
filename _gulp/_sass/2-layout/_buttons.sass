@@ -4,7 +4,7 @@
   display: inline-block
   padding: 0 15px
   margin-bottom: 0
-  font-size: rem(14)
+  font-size: rem(16)
   font-weight: 400
   text-align: center
   white-space: nowrap
@@ -12,19 +12,92 @@
   touch-action: manipulation
   cursor: pointer
   user-select: none
-  background:
-    image: none
-    color: $color-gray
-  border: 1px solid $color-white
-  border-radius: 3px
-  height: 40px
-  line-height: 40px
-  transition: color 0.35s, background-color 0.35s, border-color 0.35s
+  background: $color-orange
+  border: 1px solid $color-orange
+  border-radius: 0px
+  height: 35px
+  line-height: 35px
+  min-width: 196px
+  color: $color-white
+  font-family: $font-opensans-cb
+  text-transform: uppercase
+  transition: color 0.35s, background 0.35s, border 0.35s, box-shadow 0.35s
+  text-decoration: none
+  box-shadow: 6px 0 20px rgba($color-orange,.5)
 
   &:hover, &:focus, &:active
     outline: none
+    box-shadow: 6px 6px 20px rgba($color-orange,.9)
+    color: $color-white
+
+  &--thin
+    height: 30px
+    line-height: 28px
+
+  .icon
+    margin-right: 8px
+    vertical-align: 0
 
   &--default
     color: #333
     background-color: $color-white
     border-color: $color-gray
+
+  &--header
+    float: right
+    margin-top: 25px
+    font-size: rem(13)
+    min-width: inherit
+    width: 262px
+    position: relative
+    z-index: 5
+    .icon
+      vertical-align: -4px
+
+  &--header-form
+    .icon
+      vertical-align: -1px
+
+  &--more
+    float: left
+    margin-left: -45px
+    min-width: 180px
+    font-size: rem(13)
+    height: 30px
+    line-height: 28px
+  &--add-comment
+    float: right
+    margin-right: 0
+    min-width: 170px
+    background: none
+    box-shadow: none
+    border: 0
+    color: $color-orange
+    font-size: rem(13)
+    height: 30px
+    line-height: 28px
+    &:hover
+      box-shadow: none
+      color: $color-white
+    .icon
+      vertical-align: -4px
+  &--download
+    width: 262px
+    background: $color-white
+    border: 1px solid $color-orange
+    box-shadow: 0 0 0px rgba($color-orange,.5)
+    color: $color-orange
+    &:hover, &:focus
+      color: $color-orange
+    .icon
+      margin-right: 10px
+  &--comment
+    font-size: rem(13)
+    min-width: inherit
+    width: 262px
+    position: relative
+    z-index: 5
+    display: block
+    margin: 0 auto
+    .icon
+      vertical-align: -4px

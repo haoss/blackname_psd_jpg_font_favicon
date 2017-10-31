@@ -3,7 +3,7 @@ doctype
 html(lang="ru")
   
   -var active = 'Главная' //активный пункт меню, список в header.jade
-  -var pageTitle = 'Главная' + ' - siteName' //title страницы для генерации верстки  
+  -var pageTitle = 'Главная' + ' - Blackname.ru' //title страницы для генерации верстки  
 
   include ./_include/_head
 
@@ -17,19 +17,192 @@ html(lang="ru")
     // Content
     .content
       
-      // Section
-      section.section
+      // Comment
+      .comment
         .container
           
-          h1 Главная 223
+          .comment__head
+            div.comment__head--left Последние отзывы
+            div.comment__head--right
+              | выводить по
+              .comment__select
+                select.niceSelect
+                  option(value="") 36
+                  option(value="") 72
+                  option(value="") 118
           
           .row
-            .col-md-4 4 collumns
-            .col-md-8 8 collumns
+            .col-sm-4.col-xs-6.col-xxs-12
+              .comment__block
+                .comment__block-wrapper
+                  .comment__name Глызин 
+                    small Михаил Анатольевич 
+                  .comment__text
+                    table
+                      tr
+                        td
+                          i.ion-ios-location
+                        td Санкт-Петербург 
+                      tr
+                        td
+                          i.ion-android-call
+                        td 
+                          a(href="#!") +79657641212 
+                      tr
+                        td
+                          i.ion-ios-email
+                        td 
+                          a(href="#!") potemkin@list.ru
+                    p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. 
+                    .clear
+                    a(href="#!").btn.btn--more подробнее
+                    a(href="#!").btn.btn--add-comment 
+                      i.icon.icon--comment-2
+                      | добавить отзыв
+            .col-sm-4.col-xs-6.col-xxs-12
+              .comment__block
+                .comment__block-wrapper
+                  .comment__name Потемкин 
+                    small Григорий Александрович
+                  .comment__text
+                    table
+                      tr
+                        td
+                          i.ion-ios-location
+                        td Санкт-Петербург 
+                      tr
+                        td
+                          i.ion-android-call
+                        td 
+                          a(href="#!") +79657641212 
+                      tr
+                        td
+                          i.ion-ios-email
+                        td 
+                          a(href="#!") potemkin@list.ru
+                    p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. 
+                    .clear
+                    a(href="#!").btn.btn--more подробнее
+                    a(href="#!").btn.btn--add-comment 
+                      i.icon.icon--comment-2
+                      | добавить отзыв
+            .col-sm-4.col-xs-6.col-xxs-12
+              .comment__block
+                .comment__block-wrapper
+                  .comment__name Симонов
+                    small Петр Александрович 
+                  .comment__text
+                    table
+                      tr
+                        td
+                          i.ion-ios-location
+                        td Санкт-Петербург 
+                      tr
+                        td
+                          i.ion-android-call
+                        td 
+                          a(href="#!") +79657641212 
+                      tr
+                        td
+                          i.ion-ios-email
+                        td 
+                          a(href="#!") potemkin@list.ru
+                    p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. 
+                    .clear
+                    a(href="#!").btn.btn--more подробнее
+                    a(href="#!").btn.btn--add-comment 
+                      i.icon.icon--comment-2
+                      | добавить отзыв
+            .col-sm-4.col-xs-6.col-xxs-12
+              .comment__block
+                .comment__block-wrapper
+                  .comment__name Краснова 
+                    small Анна Михайловна 
+                  .comment__text
+                    table
+                      tr
+                        td
+                          i.ion-ios-location
+                        td Санкт-Петербург 
+                      tr
+                        td
+                          i.ion-android-call
+                        td 
+                          a(href="#!") +79657641212 
+                      tr
+                        td
+                          i.ion-ios-email
+                        td 
+                          a(href="#!") potemkin@list.ru
+                    p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. 
+                    .clear
+                    a(href="#!").btn.btn--more подробнее
+                    a(href="#!").btn.btn--add-comment 
+                      i.icon.icon--comment-2
+                      | добавить отзыв
+            .col-sm-4.col-xs-6.col-xxs-12
+              .comment__block
+                .comment__block-wrapper
+                  .comment__name Крылов   
+                    small Анатолий Сергеевич
+                  .comment__text
+                    table
+                      tr
+                        td
+                          i.ion-ios-location
+                        td Санкт-Петербург 
+                      tr
+                        td
+                          i.ion-android-call
+                        td 
+                          a(href="#!") +79657641212 
+                      tr
+                        td
+                          i.ion-ios-email
+                        td 
+                          a(href="#!") potemkin@list.ru
+                    p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. 
+                    .clear
+                    a(href="#!").btn.btn--more подробнее
+                    a(href="#!").btn.btn--add-comment 
+                      i.icon.icon--comment-2        
+                      | добавить отзыв
+            .col-sm-4.col-xs-6.col-xxs-12
+              .comment__block
+                .comment__block-wrapper
+                  .comment__name Рыбина 
+                    small Татьяна Михайловна
+                  .comment__text
+                    table
+                      tr
+                        td
+                          i.ion-ios-location
+                        td Санкт-Петербург 
+                      tr
+                        td
+                          i.ion-android-call
+                        td 
+                          a(href="#!") +79657641212 
+                      tr
+                        td
+                          i.ion-ios-email
+                        td 
+                          a(href="#!") potemkin@list.ru
+                    p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. 
+                    .clear
+                    a(href="#!").btn.btn--more подробнее
+                    a(href="#!").btn.btn--add-comment 
+                      i.icon.icon--comment-2
+                      | добавить отзыв
+
+          .text-center
+            button(type="button").btn.btn--download
+              i.icon.icon--download
+              | загрузить еще
 
     
     include ./_include/_footer
-    div(style="height: 1000px; background-color: #000")
+    //- div(style="height: 1000px; background-color: #000")
     
     //[if gte IE 9]
       <script src='./js/libs/html5shiv/es5-shim.min.js'>

@@ -1,3 +1,76 @@
 /* header */
 .header
-  background-color: $color-gray
+  margin-bottom: 30px
+  overflow: hidden
+  // min-height: 330px
+  background:
+    image: url('../img/header-background.png'), linear-gradient(to top, #f2f3f5 107px, $color-white 0px)
+    position: center calc(100% - 46px), bottom center
+    repeat: no-repeat
+  &__logo
+    float: left
+    margin-top: 24px
+    margin-bottom: 30px
+  &__btn
+    float: right
+  &__quote
+    margin-left: -1px
+    border-left: 2px solid $color-dark
+    font-size: rem(20)
+    font-family: $font-opensans-cb
+    padding-left: 7px
+    max-width: 960px
+    line-height: 21px
+    margin-bottom: 64px
+    color: $color-dark
+  &__img
+    position: absolute
+    right: -50px
+    bottom: 0
+    display: block
+  .container
+    position: relative
+    min-height: 330px
+  &__form
+    position: relative
+    z-index: 10
+    &-wrapper
+      display: table
+      &>div
+        display: table-cell
+        vertical-align: middle
+        &+div
+          padding-left: 1px
+    input
+      width: 235px
+      height: 35px
+      padding: 0 13px
+      font-size: rem(13)
+      font-family: $font-roboto-bold
+      border: 2px solid #c1c1c1
+      color: $color-dark
+      transition: color 0.35s, border 0.35s
+      &::-webkit-input-placeholder
+        color: #9f9f9f
+        font-family: $font-roboto-light
+      &::-moz-placeholder
+        color: #9f9f9f
+        font-family: $font-roboto-light
+      &:-ms-input-placeholder
+        color: #9f9f9f
+        font-family: $font-roboto-light
+      &:-moz-placeholder
+        color: #9f9f9f
+        font-family: $font-roboto-light
+      &:focus
+        color: $color-dark
+        border-color: #424242
+    legend
+      border: 0
+      text-align: left
+      display: block
+      font-family: $font-opensans-cb
+      font-size: rem(16)
+      line-height: 1.2
+      color: $color-dark
+      margin-bottom: 9px

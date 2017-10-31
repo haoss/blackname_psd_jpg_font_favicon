@@ -1,15 +1,35 @@
 // Header
 header.header
   .container
+  
+    .header__logo
+      a(href="#!")
+        img(src="./img/header-logo.png", alt="")
     
-    -var navigation = { 'Главная': '#', 'О нас': '#', 'Продукция': '#', 'Сотрудничество': '#', 'Наши магазины': '#', 'Контакты': '#'};
+    a(href="#popup-register").btn.btn--header.open-popup-link
+      i.icon.icon--comment
+      | добавить
+      span.hidden-xxs &nbsp;отзыв
+      
+    .clear
+      
+    img(src="./img/header-img.png", alt="").header__img
     
-    nav.navigation(role="navigation")
-      ul
-        each val, key in navigation
-          if active === key
-            li.active
-              a(href=val, title=key)= key
-          else
-            li
-              a(href=val, title=key)= key
+    .header__quote Блэкнэйм сотрудничает с компаниями, предпринимателями и частными лицами, собирая данные о недобросовестных исполнителях‚ сотрудниках и контрагентах. Прежде чем начать сотрудничество с человеком, посмотрите отзывы о нём.
+    
+    .header__form
+      form(action="#!")
+        legend Введите данные, которые вам известны о человеке, и почитайте отзывы о нем
+        .header__form-wrapper
+          div
+            input(type="text" placeholder="Фамилия")
+          div
+            input(type="text" placeholder="Имя")
+          div
+            input(type="text" placeholder="Телефон")
+          div
+            input(type="text" placeholder="Email")
+          div
+            button(type="button").btn.btn--header-form
+              i.icon.icon--search
+              | найти
