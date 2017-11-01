@@ -28,6 +28,8 @@
     &--add-comment
       margin-right: -25px
       min-width: 160px
+  .content
+    min-height: 200px
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 991px)
@@ -48,6 +50,8 @@
       min-width: inherit
     &--add-comment
       margin-top: 10px
+  .content
+    min-height: inherit
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 767px)
@@ -91,6 +95,14 @@
       float: none
   .search-result__not-result
     background-size: auto 300px
+  .search-result__row
+    &>div
+      .btn
+        right: inherit
+        top: 50%
+        margin-top: -15px
+        left: 0
+        transform: translateX(-70px)
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 479px)
@@ -121,6 +133,21 @@
   .col-xxs-12
     float: none !important
     width: 100% !important
+  .people
+    &__wrapper
+      display: block
+      &>div
+        display: block
+        &+div
+          padding-top: 15px
+    &__table
+      float: left
+      margin-left: -10px
+  .comment__row
+    &-title
+      &>span
+        display: block
+        margin-left: 0
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 319px)

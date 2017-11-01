@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Результат поиска - Blackname.ru</title>
+        <meta name="description" content="">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="./favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="./favicon/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="./favicon/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="./favicon/manifest.json">
+        <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
+        <link rel="shortcut icon" href="./favicon/favicon.ico">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="./favicon/mstile-144x144.png">
+        <meta name="msapplication-config" content="./favicon/browserconfig.xml">
+        <meta name="theme-color" content="#ffffff">
+        <link rel="stylesheet" href="./js/libs/magnific-popup/magnific-popup.css">
+        <link rel="stylesheet" href="./js/libs/jquery-nice-select/nice-select.css">
+        <link rel="stylesheet" href="./css/main.css">
+    </head>
+    <body>
+        <!-- Preloader-->
+        <div class="loader">
+            <div class="loader__block"></div>
+        </div>
+        <div id="popup-register" class="popup popup--register mfp-hide">
+            <div class="popup__title">Внимание!</div>
+            <div class="popup__info">Для того, чтобы оставлять отзывы или общаться с пользователем, зарегистрируйтесь</div>
+            <form action="#!">
+                <div class="form-group">
+                    <label class="hidden">Имя</label>
+                    <input type="text" placeholder="Имя" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="hidden">Фамилия</label>
+                    <input type="text" placeholder="Фамилия" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label class="hidden">Телефон</label>
+                    <input type="text" placeholder="Телефон" class="form-control">
+                </div>
+                <div class="popup__separator"><span>или</span></div>
+                <div class="form-group">
+                    <label class="hidden">Email</label>
+                    <input type="text" placeholder="Email" class="form-control">
+                </div>
+                <div class="clear"></div>
+                <div class="popup__bottom">
+                    <button type="submit" class="btn">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
+        <div id="popup-senks" class="popup popup--senks mfp-hide">
+            <div class="popup__title">поздравляем!</div>
+            <div class="popup__info">Вы зарегистрировались на Блэкнэйм, служба поддержки свяжется с Вами в ближайшее время.</div>
+        </div>
+        <!-- Header-->
+        <header class="header">
+            <div class="container">
+                <div class="header__logo"><a href="#!"><img src="./img/header-logo.png" alt=""></a></div><a href="#popup-register" class="btn btn--header open-popup-link"><i class="icon icon--comment"></i>добавить<span class="hidden-xxs">&nbsp;отзыв</span></a>
+                <div class="clear"></div><img src="./img/header-img.png" alt="" class="header__img">
+                <div class="header__quote">Блэкнэйм сотрудничает с компаниями, предпринимателями и частными лицами, собирая данные о недобросовестных исполнителях‚ сотрудниках и контрагентах. Прежде чем начать сотрудничество с человеком, посмотрите отзывы о нём.</div>
+                <div class="header__form">
+                    <form action="#!">
+                        <legend>Введите данные, которые вам известны о человеке, и почитайте отзывы о нем</legend>
+                        <div class="header__form-wrapper">
+                            <div>
+                                <input type="text" placeholder="Фамилия">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Имя">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Телефон">
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div>
+                                <button type="button" class="btn btn--header-form"><i class="icon icon--search"></i>найти</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- Content-->
+        <div class="content">
+            <!-- Search result-->
+            <div class="search-result">
+                <div class="container">
+                    <div class="search-result__head">
+                        <div class="search-result__head--left">Результаты поиска</div>
+                        <div class="search-result__head--right">выводить по
+                            <div class="search-result__select">
+                                <select class="niceSelect">
+                                    <option value="">36</option>
+                                    <option value="">72</option>
+                                    <option value="">118</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-result__list">
+                        <div class="search-result__row">
+                            <div class="user">Иванов
+                                <div class="visible-xs">
+                                    <div class="clear5"></div>Сергей
+                                    <div class="clear5"></div>Сергеевич
+                                </div>
+                            </div>
+                            <div class="user hidden-xs">Сергей</div>
+                            <div class="user hidden-xs">Сергеевич</div>
+                            <div class="hidden-xs">Москва</div>
+                            <div class="hidden-xs">79654675646</div>
+                            <div> 
+                                <div class="visible-xs">Москва
+                                    <div class="clear5"></div>79654675646
+                                    <div class="clear5"></div>
+                                </div><a href="#!" class="search-result__row-link">ivanov@mail.ru</a><a href="#!" class="btn btn--thin">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="search-result__row">
+                            <div class="user">Петров
+                                <div class="visible-xs">
+                                    <div class="clear5"></div>Александр
+                                    <div class="clear5"></div>Васильевич
+                                </div>
+                            </div>
+                            <div class="user hidden-xs hidden-xs">Александр</div>
+                            <div class="user hidden-xs">Васильевич</div>
+                            <div class="hidden-xs">Орел</div>
+                            <div class="hidden-xs">79654675646</div>
+                            <div>
+                                <div class="visible-xs">Орел
+                                    <div class="clear5"></div>79654675646
+                                    <div class="clear5"> </div>
+                                </div><a href="#!" class="search-result__row-link">petrov@ya.ru</a><a href="#!" class="btn btn--thin">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="search-result__row">
+                            <div class="user">Серов
+                                <div class="visible-xs">
+                                    <div class="clear5"></div>Семен
+                                    <div class="clear5"></div>Анатольевич
+                                </div>
+                            </div>
+                            <div class="user hidden-xs">Семен</div>
+                            <div class="user hidden-xs">Анатольевич</div>
+                            <div class="hidden-xs">Тула</div>
+                            <div class="hidden-xs">79654675646</div>
+                            <div> 
+                                <div class="visible-xs">Тула
+                                    <div class="clear5"></div>79654675646
+                                    <div class="clear5"></div>
+                                </div><a href="#!" class="search-result__row-link">ivanov@mail.ru</a><a href="#!" class="btn btn--thin">Подробнее</a>
+                            </div>
+                        </div>
+                        <div class="search-result__row">
+                            <div class="user">Макаров
+                                <div class="visible-xs">
+                                    <div class="clear5"></div>Василий
+                                    <div class="clear5"></div>Иванович
+                                </div>
+                            </div>
+                            <div class="user hidden-xs">Василий</div>
+                            <div class="user hidden-xs">Иванович</div>
+                            <div class="hidden-xs">Курск</div>
+                            <div class="hidden-xs">79654675646</div>
+                            <div> 
+                                <div class="visible-xs">Курск
+                                    <div class="clear5"></div>79654675646
+                                    <div class="clear5"></div>
+                                </div><a href="#!" class="search-result__row-link">makarov@gmail.com</a><a href="#!" class="btn btn--thin">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer-->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__info">Если нашли несоответствие информации, сообщите в службу поддержки <br> <a href="#!">8 (495) 345-45-45</a>&nbsp;или <a href="#!">info@blackname.ru</a></div>
+                <div class="footer__copyright">© 2010-2017 blackname.ru.<br>All rights reserved.</div>
+            </div>
+        </footer>
+        <!--[if gte IE 9]
+        <script src='./js/libs/html5shiv/es5-shim.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv.min.js'>
+        <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+        <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+        
+        -->
+        <!-- Load Scripts-->
+        <script src="./js/libs.js"></script>
+        <!-- Footer js-->
+        <script src="./js/libs/jquery-nice-select/jquery.nice-select.min.js"></script>
+        <script src="./js/common.js"></script>
+    </body>
+</html>

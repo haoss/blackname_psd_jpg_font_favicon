@@ -1,0 +1,125 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = 'Результат поиска' //активный пункт меню, список в header.jade
+  -var pageTitle = 'Результат поиска' + ' - Blackname.ru' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    // Content
+    .content
+      
+      // Search result
+      .search-result
+        .container
+          
+          .search-result__head
+            div.search-result__head--left Результаты поиска
+            div.search-result__head--right
+              | выводить по
+              .search-result__select
+                select.niceSelect
+                  option(value="") 36
+                  option(value="") 72
+                  option(value="") 118
+            
+          .search-result__list
+            .search-result__row
+              div.user Иванов
+                .visible-xs
+                  .clear5
+                  | Сергей
+                  .clear5
+                  | Сергеевич
+              div.user.hidden-xs Сергей
+              div.user.hidden-xs Сергеевич
+              div.hidden-xs Москва
+              div.hidden-xs 79654675646
+              div 
+                .visible-xs
+                  | Москва
+                  .clear5
+                  | 79654675646
+                  .clear5
+                a(href="#!").search-result__row-link ivanov@mail.ru
+                a(href="#!").btn.btn--thin Подробнее
+            .search-result__row
+              div.user Петров
+                .visible-xs
+                  .clear5
+                  | Александр
+                  .clear5
+                  | Васильевич
+              div.user.hidden-xs.hidden-xs Александр
+              div.user.hidden-xs Васильевич
+              div.hidden-xs Орел
+              div.hidden-xs 79654675646
+              div
+                .visible-xs
+                  | Орел
+                  .clear5
+                  | 79654675646
+                  .clear5 
+                a(href="#!").search-result__row-link petrov@ya.ru
+                a(href="#!").btn.btn--thin Подробнее
+            .search-result__row
+              div.user Серов
+                .visible-xs
+                  .clear5
+                  | Семен
+                  .clear5
+                  | Анатольевич
+              div.user.hidden-xs Семен
+              div.user.hidden-xs Анатольевич
+              div.hidden-xs Тула
+              div.hidden-xs 79654675646
+              div 
+                .visible-xs
+                  | Тула
+                  .clear5
+                  | 79654675646
+                  .clear5
+                a(href="#!").search-result__row-link ivanov@mail.ru
+                a(href="#!").btn.btn--thin Подробнее
+            .search-result__row
+              div.user Макаров
+                .visible-xs
+                  .clear5
+                  | Василий
+                  .clear5
+                  | Иванович
+              div.user.hidden-xs Василий
+              div.user.hidden-xs Иванович
+              div.hidden-xs Курск
+              div.hidden-xs 79654675646
+              div 
+                .visible-xs
+                  | Курск
+                  .clear5
+                  | 79654675646
+                  .clear5
+                a(href="#!").search-result__row-link makarov@gmail.com
+                a(href="#!").btn.btn--thin Подробнее
+    
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

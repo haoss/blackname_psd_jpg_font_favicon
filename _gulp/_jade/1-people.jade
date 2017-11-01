@@ -1,0 +1,89 @@
+doctype
+
+html(lang="ru")
+  
+  -var active = '1 имя' //активный пункт меню, список в header.jade
+  -var pageTitle = '1 имя' + ' - Blackname.ru' //title страницы для генерации верстки  
+
+  include ./_include/_head
+
+  body
+    
+    // Preloader
+    include ./_include/_preloader
+    
+    include ./_include/_header
+    
+    // Content
+    .content
+      .container
+        
+        // People
+        .people
+          .people__wrapper
+            div
+              .people__name Глызин 
+                small Михаил Анатольевич
+              a.btn.btn--add-comment(href='#!')
+                i.icon.icon--comment-2
+                | добавить отзыв
+
+            div
+              table.people__table
+                tbody
+                  tr
+                    td
+                      i.ion-ios-location
+                    td Санкт-Петербург 
+                  tr
+                    td
+                      i.ion-android-call
+                    td
+                      a(href='#!') +79657641212 
+                  tr
+                    td
+                      i.ion-ios-email
+                    td
+                      a(href='#!') potemkin@list.ru
+
+        // Comment
+        .comment__row-head Отзывов: 
+          span 2
+        
+        .comment__row
+          .comment__row-title Петров К.П.
+          a(href="#!").comment__row-btn
+            i.icon.icon--comment-2
+            | написать ответ
+          .clear10
+          .comment__row-block
+            p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения.
+            
+        .comment__row
+          .comment__row-title Иванов И.И.
+            span
+              i.ion-arrow-return-right
+              small Ответ
+              strong Петрову К.П.
+          a(href="javascript:void(0)").comment__row-btn.disabled
+            i.icon.icon--comment-3
+            | написать ответ
+          .clear10
+          .comment__row-block
+            p После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения. После окончания строительства загородных коттеджей, поняли, что материалы используемые для строительства, не соответствуют ГОСТам. Теперь не можем подключить к коммуникациям, государство не дает разрешения.
+
+      
+    include ./_include/_footer
+    //- div(style="height: 1000px; background-color: #000")
+    
+    //[if gte IE 9]
+      <script src='./js/libs/html5shiv/es5-shim.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv.min.js'>
+      <script src='./js/libs/html5shiv/html5shiv-printshiv.min.js'>
+      <script src='./js/libs/html5shiv/respond.min.js'><![endif]
+
+    // Load Scripts
+    script(src="./js/libs.js")
+    include ./_include/_footer-js
+    script(src="./js/common.js")
+    include ./_include/_js-body-bottom

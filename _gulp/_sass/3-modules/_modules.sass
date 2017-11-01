@@ -188,6 +188,66 @@
           font-weight: 600
           color: $color-orange
           // background-color: $color-s-lightbrown
+  &__row
+    color: #232323
+    font-size: rem(13)
+    margin-bottom: 23px
+    border-bottom: 1px solid #e7e7e7
+    padding-bottom: 23px
+    &:last-child
+      border-bottom: 0
+    p
+      line-height: 18px
+      &:last-child
+        margin-bottom: 0
+    &-title
+      font-size: rem(15)
+      color: #232323
+      font-family: $font-opensans-cb
+      text-transform: uppercase
+      float: left
+      &>span
+        display: inline-block
+        margin-left: 10px
+        color: $color-orange
+        text-transform: uppercase
+        i
+          font-size: rem(13)
+        small
+          font-size: rem(11)
+          color: #ababab
+          display: inline-block
+          margin: 0 5px
+          text-transform: none
+    &-btn
+      float: right
+      text-transform: uppercase
+      font-size: rem(15)
+      text-decoration: none
+      color: $color-orange
+      font-family: $font-opensans-cb
+      &.disabled
+        cursor: default
+        color: #aaaaaa
+        &:hover
+          text-decoration: none
+      &:hover
+        text-decoration: underline
+      i
+        margin-right: 10px
+        vertical-align: -3px
+    &-block
+      padding-left: 40px
+      padding-top: 10px
+      position: relative
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAnCAYAAABAOmveAAAA7UlEQVRYhe3YMQrCUBBF0RsbQRTcksvRykrdQnQDWYSLsHAp9kJCSomVIBg1P/OK+TC3DvNyijQp6qbdousM3BKenwJr5X5RN20nPLgCLgnPL4G7cn8iPOaiAHkvQN4LkPcC5L0AeS9A3guQ9wLkPTXoIb6XvK8EVcBVeG/UvgpUARtA+X8ieX8xn3UKkBsM2L8hVxiwgdxhYDzIBaZvfwzILQbSQa4xkAZyj4HhoCwwMAyUDQb+g7LCwG9Qdhj4DsoSA/2gbDHwCTpZjgk6WvffQSWwsxwzVgJ76/4LVAIH6xsZku1PlMdGJt1/AuviVZ8WED1RAAAAAElFTkSuQmCC') 0 0 no-repeat
+    &-head
+      font-size: rem(16)
+      font-family: $font-opensans-cb
+      color: #232323
+      span
+        color: $color-orange
+      margin-bottom: 20px
 
 .search-result
   &__head
@@ -263,3 +323,89 @@
       letter-spacing: 2px
     small
       font-size: rem(14)
+  &__list
+    display: table
+    width: 100%
+  &__row
+    color: #232323
+    font-size: rem(13)
+    font-family: $font-roboto
+    display: table-row
+    &>div
+      display: table-cell
+      vertical-align: middle
+      position: relative
+      padding: 10px 15px
+      width: calc(100% / 6)
+      border-bottom: 1px solid #e7e7e7
+    &:nth-child(odd)
+      &>div
+        background: #fafafb
+    .btn
+      position: absolute
+      right: 5px
+      top: 4px
+      display: none
+      box-shadow: none
+      &:hover
+        color: $color-orange
+        background: $color-white
+    &-link
+      text-decoration: none
+    &:hover
+      &>div
+        background: #232323
+        color: #9e9e9e
+        &.user
+          color: $color-white
+      .btn
+        display: block
+
+.people
+  margin-bottom: 25px
+  border: 2px solid #f2f3f5
+  padding: 17px
+  +clearfix
+  &__wrapper
+    display: table
+    width: 100%
+    &>div
+      display: table-cell
+      vertical-align: middle
+    .btn
+      float: none
+      min-width: inherit
+      padding: 0
+      height: auto
+      line-height: inherit
+      margin: 0
+      width: auto
+      display: inline-block
+      &:hover
+        color: $color-orange
+        text-decoration: underline
+  &__name
+    font-size: 1.25rem
+    font-family: "RobotoBold"
+    line-height: 1.2
+    margin-bottom: 5px
+    color: #232323
+    small
+      font-family: "RobotoRegular"
+      font-size: 0.875rem
+      display: block
+  &__table
+    font-family: "RobotoBold"
+    color: #7d7c7c
+    float: right
+    min-width: 150px
+    td
+      &:first-child
+        text-align: center
+        width: 25px
+      i
+        color: #c2c7d3
+    a
+      text-decoration: none
+      &:hover
+        text-decoration: underline
